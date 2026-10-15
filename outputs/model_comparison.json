@@ -1,0 +1,18 @@
+[
+  {
+    "Model": "Logistic Regression",
+    "Accuracy": 0.6623,
+    "Precision": 0.6588,
+    "Recall": 0.6734,
+    "F1": 0.666,
+    "ROC_AUC": 0.723
+  },
+  {
+    "Model": "Random Forest",
+    "Accuracy": 0.6621,
+    "Precision": 0.6588,
+    "Recall": 0.6725,
+    "F1": 0.6655,
+    "ROC_AUC": 0.7237
+  }
+]

@@ -1,0 +1,22 @@
+name: credit_default
+description: >
+  Loan default risk classification on an 85k-application credit dataset.
+  Cleans text-encoded numerics, derives the default target, and trains
+  Logistic Regression and Random Forest, compared on ROC-AUC.
+
+execution_order:
+  - {block: data_loaders.credit_loader.load_data, type: data_loader}
+  - {block: transformers.clean.clean_applications, type: transformer}
+  - {block: transformers.split.split_data, type: transformer}
+  - {block: transformers.model_training.train_and_evaluate, type: transformer}
+  - {block: data_exporters.local_exporter.export_metrics, type: data_exporter}
+
+variables:
+  seed: 42
+  test_size: 0.20
+  target: target_default
+  default_label: "Charged Off"
+
+schedule:
+  interval: "0 2 * * 1"
+  enabled: false
