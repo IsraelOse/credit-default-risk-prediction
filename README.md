@@ -26,4 +26,4 @@ The two models land close together, suggesting the signal is largely linear once
 ## Tech
 Python · pandas · scikit-learn
 
-> **Academic group project (Group 6)**, DAMO Master of Data Analytics. Shared coursework; teammate contributions acknowledged. _Add teammate names here._
+*Project from the Master of Data Analytics program, University of Niagara Falls Canada.*
